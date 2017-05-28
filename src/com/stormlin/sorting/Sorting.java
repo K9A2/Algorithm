@@ -15,7 +15,7 @@ package com.stormlin.sorting;
  */
 public class Sorting {
 
-    //冒泡排序
+    //region 冒泡排序
     public static void bubbleSort(int nums[], int length) {
         for (int i = 0; i < length; length--) {
             for (int j = i; j < length - 1; j++) {
@@ -27,9 +27,10 @@ public class Sorting {
             }
         }
     }
+    //endregion
 
-    //快速排序
-    // todo:简化此算法，特别是两个while，sorting.c尚未提交git
+    //region 快速排序
+    // todo:简化此算法
     public static void quickSort(int nums[], int left, int right) {
         if (left > right) {
             return;
@@ -56,8 +57,9 @@ public class Sorting {
             }
         }
     }
+    //endregion
 
-    //插入排序
+    //region 插入排序
     //todo:添加文档
     public static void insertionSort(int nums[], int length) {
         for (int i = 1; i < length; i++) {
@@ -68,8 +70,9 @@ public class Sorting {
             }
         }
     }
+    //endregion
 
-    //选择排序
+    //region 选择排序
     //todo:添加对应文档
     public static void selectionSort(int nums[], int length) {
         //外循环：控制排序进程
@@ -85,12 +88,14 @@ public class Sorting {
             nums[i] = min;
         }
     }
+    //endregion
 
-    //堆排序
+    //region 堆排序
     public static void heapSort(int nums[], int length) {
     }
+    //endregion
 
-    //归并排序
+    //region 归并排序
     public static void mergeSort(int nums[]) {
 
         int[] temp = new int[nums.length];
@@ -139,12 +144,14 @@ public class Sorting {
         }
 
     }
+    //endregion
 
-    //基数排序
+    //region 基数排序
     public static void radixSort(int nums[], int length) {
     }
+    //endregion
 
-    //希尔排序
+    //region 希尔排序
     //todo:添加说明文档
     public static void shellSort(int nums[], int length) {
         for (int i = 0, j = 0, step = length / 2; step != 0; step /= 2) {
@@ -160,5 +167,6 @@ public class Sorting {
             }
         }
     }
+    //endregion
 
 }

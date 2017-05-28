@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c730a74b-a052-4015-a7cb-a3c26e717e3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/stormlin/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/stormlin/sorting/Sorting.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/stormlin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/stormlin/Main.java" afterPath="$PROJECT_DIR$/src/com/stormlin/Main.java" />
+    <list default="true" id="c730a74b-a052-4015-a7cb-a3c26e717e3f" name="Default" comment="Finished merge sort. @2017-05-28 17:39.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/stormlin/sorting/Sorting.java" afterPath="$PROJECT_DIR$/src/com/stormlin/sorting/Sorting.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,9 +36,18 @@
       <file leaf-file-name="Sorting.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/stormlin/sorting/Sorting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="138" column="9" lean-forward="false" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="484">
+              <caret line="95" column="15" lean-forward="true" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+              <folding>
+                <element signature="n#!!doc;n#bubbleSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#quickSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#insertionSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#selectionSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#heapSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#mergeSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#radixSort#0;n#Sorting#0" expanded="false" />
+                <element signature="n#!!doc;n#shellSort#0;n#Sorting#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -564,7 +564,7 @@
       <option name="presentableId" value="Default" />
       <updated>1495852670332</updated>
       <workItem from="1495852673834" duration="1343000" />
-      <workItem from="1495959252262" duration="5079000" />
+      <workItem from="1495959252262" duration="6690000" />
     </task>
     <task id="LOCAL-00001" summary="Set the basis for this repository. @2017-05-27 10:59.">
       <created>1495853985269</created>
@@ -573,15 +573,22 @@
       <option name="project" value="LOCAL" />
       <updated>1495853985269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished merge sort. @2017-05-28 17:39.">
+      <created>1495964400488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495964400488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6422000" />
+    <option name="totallyTimeSpent" value="8033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -600,11 +607,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40396994" sideWeight="0.5058236" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1582618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1582618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -623,7 +630,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set the basis for this repository. @2017-05-27 10:59." />
-    <option name="LAST_COMMIT_MESSAGE" value="Set the basis for this repository. @2017-05-27 10:59." />
+    <MESSAGE value="Finished merge sort. @2017-05-28 17:39." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished merge sort. @2017-05-28 17:39." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,7 +656,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc;n#bubbleSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#quickSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#insertionSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#selectionSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#heapSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#mergeSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#radixSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#shellSort#0;n#Sorting#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,9 +679,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/stormlin/sorting/Sorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="138" column="9" lean-forward="false" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="484">
+          <caret line="95" column="15" lean-forward="true" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc;n#bubbleSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#quickSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#insertionSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#selectionSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#heapSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#mergeSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#radixSort#0;n#Sorting#0" expanded="false" />
+            <element signature="n#!!doc;n#shellSort#0;n#Sorting#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
