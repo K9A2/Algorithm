@@ -8,7 +8,7 @@ public class Main {
 
         int a[] = {5, 4, 3, 2, 1};
 
-        Sorting.shellSort(a, a.length);
+        Sorting.mergeSort(a);
 
         for (int item : a) {
 

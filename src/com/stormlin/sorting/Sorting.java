@@ -3,14 +3,14 @@ package com.stormlin.sorting;
 /**
  * 用静态方法的形式记录了一些经典的排序算法。
  * 包括：1.冒泡排序-bubbleSort
- *      2.快速排序-quickSort
- *      3.插入排序-insertionSort
- *      4.选择排序-selectionSort
- *      5.堆排序-heapSort
- *      6.归并排序-mergeSort
- *      7.基数排序-radixSort
- *      8.希尔排序-shellSort
- *
+ * 2.快速排序-quickSort
+ * 3.插入排序-insertionSort
+ * 4.选择排序-selectionSort
+ * 5.堆排序-heapSort
+ * 6.归并排序-mergeSort
+ * 7.基数排序-radixSort
+ * 8.希尔排序-shellSort
+ * <p>
  * Created by stormlin on 2017/5/27.
  */
 public class Sorting {
@@ -91,7 +91,53 @@ public class Sorting {
     }
 
     //归并排序
-    public static void mergeSort(int nums[], int length) {
+    public static void mergeSort(int nums[]) {
+
+        int[] temp = new int[nums.length];
+
+        sort(nums, 0, nums.length - 1, temp);
+
+    }
+
+    private static void sort(int nums[], int low, int high, int[] temp) {
+
+        if (low < high) {
+            int mid = (high + low) / 2;
+            sort(nums, low, mid, temp);
+            sort(nums, mid + 1, high, temp);
+            merge(nums, low, mid, high, temp);
+        }
+
+    }
+
+    private static void merge(int nums[], int low, int mid, int high, int[] temp) {
+
+        int i = low;
+        int j = mid + 1;
+        int k;
+
+        for (k = 0; i <= mid && j <= high; k++) {
+            if (nums[i] < nums[j]) {
+                temp[k] = nums[i++];
+            } else {
+                temp[k] = nums[j++];
+            }
+        }
+
+        while (i <= mid) {
+            temp[k++] = nums[i++];
+        }
+
+        while (j <= high) {
+            temp[k++] = nums[j++];
+        }
+
+        k = 0;
+
+        for (int l = low; l <= high; l++, k++) {
+            nums[l] = temp[k];
+        }
+
     }
 
     //基数排序
@@ -101,14 +147,11 @@ public class Sorting {
     //希尔排序
     //todo:添加说明文档
     public static void shellSort(int nums[], int length) {
-        for (int i = 0, j = 0, step = length / 2; step != 0; step /= 2)
-        {
+        for (int i = 0, j = 0, step = length / 2; step != 0; step /= 2) {
             //重复计算步长
-            for (i = step; i < length; i++)
-            {
+            for (i = step; i < length; i++) {
                 //控制排序进行次数
-                for (j = i - step; j >= 0 && nums[j] > nums[j + step]; j -= step)
-                {
+                for (j = i - step; j >= 0 && nums[j] > nums[j + step]; j -= step) {
                     //进行插入排序
                     int temp = nums[j];
                     nums[j] = nums[j + step];
