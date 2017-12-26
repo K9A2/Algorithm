@@ -10,7 +10,7 @@ public class Sorting {
         if (left > right) {
             return;
         }
-        int temp = 0;
+        int temp;
         int reference = nums[left];
         for (int i = left, j = right; i != j; ) {
             while (j > left && j > i && nums[j] >= reference) {
