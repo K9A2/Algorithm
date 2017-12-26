@@ -1,32 +1,7 @@
-package com.stormlin.sorting;
-
-/**
- * 用静态方法的形式记录了一些经典的排序算法。
- * 包括：1.冒泡排序-bubbleSort
- * 2.快速排序-quickSort
- * 3.插入排序-insertionSort
- * 4.选择排序-selectionSort
- * 5.堆排序-heapSort
- * 6.归并排序-mergeSort
- * 7.基数排序-radixSort
- * 8.希尔排序-shellSort
- * <p>
- * Created by stormlin on 2017/5/27.
- */
 public class Sorting {
 
     //region 冒泡排序
-    public static void bubbleSort(int nums[], int length) {
-        for (int i = 0; i < length; length--) {
-            for (int j = i; j < length - 1; j++) {
-                if (nums[j] > nums[j + 1]) {
-                    int temp = nums[j + 1];
-                    nums[j + 1] = nums[j];
-                    nums[j] = temp;
-                }
-            }
-        }
-    }
+
     //endregion
 
     //region 快速排序
