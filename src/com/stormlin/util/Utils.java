@@ -1,9 +1,11 @@
+package com.stormlin.util;
+
 import java.util.Random;
 
 /**
  * Created by stormlin on 2017-12-26.
  */
-public class Tools {
+public class Utils {
 
     /**
      * 交换数组中的两个元素
@@ -31,7 +33,7 @@ public class Tools {
     }
 
     /**
-     * 获取随机产生数组的数组
+     * 获取随机产生的数组
      *
      * @param min    随机数下限
      * @param max    随机数上限
@@ -41,7 +43,7 @@ public class Tools {
     public static int[] getRandomIntegerArray(int min, int max, int length) {
         int[] array = new int[length];
         for (int i = 0; i < length; i++) {
-            array[i] = Tools.getRandomInteger(min, max);
+            array[i] = Utils.getRandomInteger(min, max);
         }
         return array;
     }

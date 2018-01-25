@@ -1,3 +1,7 @@
+package com.stormlin.algorithm.sort;
+
+import com.stormlin.util.Utils;
+
 /**
  * @Author stormlin
  * @DATE 2017/12/26
@@ -41,10 +45,10 @@ public class QuickSort {
                 // 从左往右找第一个比枢轴小的元素
                 i++;
             }
-            Tools.swap(array, i, j);
+            Utils.swap(array, i, j);
         }
 
-        Tools.swap(array, left, i);
+        Utils.swap(array, left, i);
 
         // 分治法，在 i 处把数组分成两部分，分别递归调用快速排序算法
         partition(array, left, i - 1);

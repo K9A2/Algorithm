@@ -1,3 +1,5 @@
+package com.stormlin.algorithm.search;
+
 /**
  * @Author stormlin
  * @DATE 2017/12/26

@@ -1,6 +1,7 @@
-import javax.lang.model.type.ArrayType;
-import javax.tools.Tool;
 import java.util.Arrays;
+
+import com.stormlin.algorithm.sort.BubbleSort;
+import com.stormlin.util.Utils;
 
 /**
  * @Author stormlin
@@ -14,11 +15,11 @@ public class Main {
     public static void main(String[] args) {
 
         //int[] testCase = {12, 13, 6, 29, 6, 24, 50, 18, 17, 38};
-        int[] testCase = Tools.getRandomIntegerArray(1, 100, 30);
+        int[] testCase = Utils.getRandomIntegerArray(1, 100, 30);
 
         System.out.println(Arrays.toString(testCase));
 
-        QuickSort.quickSort(testCase);
+        BubbleSort.bubbleSort(testCase);
 
         System.out.println(Arrays.toString(testCase));
 
